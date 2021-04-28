@@ -1,2 +1,53 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+<center>
+    <div>El Kiosco Golosinas S.A.S</div>
+    <div>Sistema de telemetría</div>
+</center>
+
+<center>
+    <div>
+
+        <form method="post" action="tratamiento.php">
+            <p>
+                <label for="pais">Seleccione el dispositivo</label><br><br>
+                <select name="pais" id="pais">
+                    <option value="francia">Cuarto frío cárnicos</option>
+                    <option value="espana">Ultra congelador</option>
+                    <option value="italia">Laminadora</option>
+                    <option value="reino-unido">Batidora</option>
+                </select>
+            </p>
+        </form>
+
+
+        <form method="post" action="tratamiento.php">
+
+            <fieldset>
+
+                <label for="nom">Ubicación</label>
+                <input type="text" name="nombre" id="nombre" />
+                <label for="apellido">Temperatura</label>
+                <input type="text" name="apellido" id="apellido" />
+                <label for="email">Consumo eléctrico</label>
+                <input type="email" name="email" id="email" />
+            </fieldset>
+            <fieldset>
+
+
+                <p>
+                    <label for="pais">Comentarios</label><br><br>
+                    <textarea name="precise" id="precise" cols="40" rows="4">
+</textarea>
+                </p>
+            </fieldset>
+        </form>
+
+        <br>
+        <input type="submit" value="Send Data">
+
+
+        </form>
+    </div>
+</center>
+
+
